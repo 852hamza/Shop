@@ -1,6 +1,6 @@
 firebase.auth().onAuthStateChanged((user) => {
     if (!user) {
-        location.replace("../login/index.html")
+        location.replace("../index.html")
     }
 
 })
