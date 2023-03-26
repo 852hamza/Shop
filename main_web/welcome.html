@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop Data</title>
+  <link rel="stylesheet" href="./ShopInfo_hidden.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <form action="" class="container" id="shopinfo">
+    <h2>Sefam Shops Information</h2>
+    <hr />
+    <br />
+    <form class="form">
+      <label for="select_brand">Select Brand </label> <select name="selectbrand" id="select_brand"
+        style="width: 310px; text-align: center; font-size: 18px; font-weight: bold; border-radius: 10px;">
+        <option>Select any Brand</option>
+        <option value="Bareeze">Bareeze (002)</option>
+        <option value="Home Expression">Home Expression (002)</option>
+        <option value="Fabric Store">Fabric Store (082)</option>
+        <option value="Bareeze Men">Bareeze Man (003)</option>
+        <option value="Chinyere">Chinyere (005)</option>
+        <option value="Minnie Minor">Minnie Minor (007)</option>
+        <option value="Rang Ja">Rang ja (008)</option>
+        <option value="The Entertainer">The Entertainer (012)</option>
+        <option value="Armani">Armani (014)</option>
+        <option value="Polo">Polo (013)</option>
+      </select><a href="../address/address.html" style="float: right;">Shop Address</a><br /><br />
+      <label>Select Store Code</label> <input type="number" name="selectstorecode" id="selectstore_code"
+        placeholder="Enter the store code" />
+      <br /><br />
+      <label>Computer Name</label> <input type="text" name="computername" id="computer_name"
+        placeholder="Enter the Shop Computer Name" style="text-transform:uppercase" autocomplete="off" />
+      <br /><br />
+      <label>Shop Contact</label> <input type="number" name="shopcontact" id="shop_contact"
+        placeholder="Enter the Shop contact number" />&nbsp;&nbsp;<label style="width: 90px;">City</label><input type="text" name="city " id="city"
+        placeholder="Enter City Here" style="text-transform: uppercase; width: 170px;">
+      <br /><br />
+      <label>Shop Manager </label> <input type="number" name="shopmanager" id="shop_manager"
+        placeholder="Enter the Shop manager number" /> <input type="text" name="shopmanagername" id="shop_manager_name"
+        placeholder="Enter the Name of Shop manager " autocomplete="off" />
+      <br /><br />
+      <label>Asst.Shop Manager</label> <input type="number" name="asstshopmanager" id="asst_shopmanager"
+        placeholder="Enter the Asst.Shop manager No" /> <input type="text" name="asstshopmanagername"
+        id="asst_shopmanager_name" placeholder="Enter the Asst.Shop manager name" autocomplete="off" />
+      <br /><br />
+      <label>Area Manager</label> <input type="number" name="areamanager" id="area_manager"
+        placeholder="Enter the Area manager number" /> <input type="text" name="areamanagername" id="area_manager_name"
+        placeholder="Enter the Area manager name" autocomplete="off" />
+      <br /><br />
+      <label>Team Viewer</label> <input type="number" name="teamviewer" id="team_viewer"
+        placeholder="Enter the Team viewer Id " />&nbsp;&nbsp;<label style=" display: inline-block;">FBR</label>
+      <br /><br />
+      <label>AnyDesk</label> <input type="number" name="anydesk" id="any_desk" placeholder="Enter the Anydesk Id " />
+      <label style="width: 110px;">POS Id</label><input type="number" name="posid" id="pos_id"
+        placeholder="Enter PosId Here" style="text-transform: uppercase; width: 170px;">
+      <br /><br />
+      <label>Email</label> <input type="email" name="email" id="email"
+        placeholder="Enter the shop email here example@gmail.com" autocomplete="off" /> <label
+        style="width: 110px;">Access Code</label> <input type="text" name="poscode" id="pos_code"
+        placeholder="Enter PosCode here" style="text-transform: uppercase; width: 170px;">
+      <br /><br />
+      <label>Shop Address</label> <input type="text" name="shopaddress" id="shop_address"
+        placeholder="Enter the Shop Address here" style="width: 615px;" autocomplete="off" />
+      <br /><br />
+
+    </form>
+
+    <center>
+
+      <div class="buttons">
+        <button hidden="hidden" id="read"></button>
+        <button class="btn_1" id="insert">Add/New</button>
+        <button class="btn_1" id="update">Edit/Update</button>
+        <button class="btn_2" id="delete">Delete</button>
+        <button class="btn btn-danger" style="width: auto;" type="button" onClick="window.location.reload()">
+          Reload Page
+        </button>
+        <button class="btn btn-danger" onclick="logout()">Logout</button>
+      </div>
+    </center>
+  </form>
+
+  <script>
+    var input = document.getElementById("shopinfo");
+    input.addEventListener("keypress", function (event) {
+      if (event.key === "Enter") {
+        event.preventDefault();
+        document.getElementById("read").click();
+      }
+    });
+  </script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase.js"></script>
+
+  <script src="../firebase/fireConfig.js"></script>
+  <script src="./ShopInfo.js"></script>
+  <script src="./welcome.js"></script>
+
+
+  <!-- Add script for hiding your data  -->
+  <script>
+    function _0x5572(_0x2db83a, _0x32bf36) { var _0xdde73 = _0xdde7(); return _0x5572 = function (_0x557254, _0x49b240) { _0x557254 = _0x557254 - 0x8a; var _0x53a5cf = _0xdde73[_0x557254]; return _0x53a5cf; }, _0x5572(_0x2db83a, _0x32bf36); } var _0xf36f3a = _0x5572; function _0xdde7() { var _0x47f1f2 = ['181694qDcIpF', '3772776jXuqGF', '350425BtIBQq', '1205335SAMEdB', 'stopPropagation', '483366NtlsxD', 'contextmenu', 'keydown', '610496nazXKU', 'addEventListener', 'keyCode', '2790168jOwsGp', 'preventDefault', 'ctrlKey', '6VeIKaJ']; _0xdde7 = function () { return _0x47f1f2; }; return _0xdde7(); } (function (_0x891478, _0x5c7e51) { var _0x4551c9 = _0x5572, _0xed0801 = _0x891478(); while (!![]) { try { var _0x32fc9a = parseInt(_0x4551c9(0x8d)) / 0x1 + -parseInt(_0x4551c9(0x8b)) / 0x2 * (parseInt(_0x4551c9(0x8a)) / 0x3) + parseInt(_0x4551c9(0x93)) / 0x4 + -parseInt(_0x4551c9(0x8e)) / 0x5 + parseInt(_0x4551c9(0x90)) / 0x6 + parseInt(_0x4551c9(0x8c)) / 0x7 + -parseInt(_0x4551c9(0x96)) / 0x8; if (_0x32fc9a === _0x5c7e51) break; else _0xed0801['push'](_0xed0801['shift']()); } catch (_0xe5e97e) { _0xed0801['push'](_0xed0801['shift']()); } } }(_0xdde7, 0x55b46), document[_0xf36f3a(0x94)](_0xf36f3a(0x91), _0x4000fc => _0x4000fc[_0xf36f3a(0x97)](), ![]), document[_0xf36f3a(0x94)](_0xf36f3a(0x92), _0x4ba3ad => { var _0x582bc3 = _0xf36f3a; (_0x4ba3ad[_0x582bc3(0x98)] || _0x4ba3ad[_0x582bc3(0x95)] == 0x7b) && (_0x4ba3ad[_0x582bc3(0x8f)](), _0x4ba3ad['preventDefault']()); }));
+  </script>
+
+</body>
+
+</html>
