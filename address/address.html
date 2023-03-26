@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Address Form</title>
+    <link rel="stylesheet" href="./address.css" />
+</head>
+
+<body>
+    <div class="address" id="adress_form">
+        <h1>Shop Address</h1>
+        <label>Select Brand </label> <select name="selectbrand" id="select_brand"
+            style="width: 310px; text-align: center; font-size: 18px; font-weight: bold; border-radius: 10px;">
+            <option>Select any Brand</option>
+            <option value="Bareeze">Bareeze (002)</option>
+            <option value="Home Expression">Home Expression (002)</option>
+            <option value="Fabric Store">Fabric Store (082)</option>
+            <option value="Bareeze Men">Bareeze Man (003)</option>
+            <option value="Chinyere">Chinyere (005)</option>
+            <option value="Minnie Minor">Minnie Minor (007)</option>
+            <option value="Rang Ja">Rang ja (008)</option>
+            <option value="The Entertainer">The Entertainer (012)</option>
+            <option value="Armani">Armani (014)</option>
+            <option value="Polo">Polo (013)</option>
+        </select><a href="../main_web/welcome.html" style="float: right;">Back to Home</a><br /><br />
+        <label>Select Store Code</label> <input type="number" name="selectstorecode" id="selectstore_code"
+            placeholder="Enter the store code" />
+        <button hidden="hidden" id="read"></button>
+        <button id="print">Print Address</button>
+    </div>
+    <div id="printitem">
+        <h2>To</h2>
+        <input class="printitemlist" name="selectbrand1" id="select_brand1" placeholder="Brand name"
+            autocomplete="off"><br />
+        <input class="printitemlist1" type="text" name="shopaddress" id="shop_address" autocomplete="off"
+            placeholder="Shop Address"><br />
+        <input class="printitemlist" type="text" name="city" id="city" autocomplete="off"
+            placeholder="City"><br />
+        <input class="printitemlist" type="number" name="shopmanager" id="shop_manager"
+            placeholder="Shop manager Number"><br />
+        <input class="printitemlist" type="number" name="shopcontact" id="shop_contact" placeholder="Shop number">
+        <h2>Form</h2>
+        <h2>G-9 Ground floor Al Hafeez Heghts, Gulbuerg &#8546;, LHR,</h2>
+        <h2>042-35771268-9</h2>
+    </div>
+
+    <script>
+        const printBtn = document.getElementById('print');
+        printBtn.addEventListener('click', function () {
+            print();
+        })
+    </script>
+    <script>
+        var input = document.getElementById("adress_form");
+        input.addEventListener("keypress", function (event) {
+            if (event.key === "Enter") {
+                event.preventDefault();
+                document.getElementById("read").click();
+            }
+        });
+
+
+    </script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase.js"></script>
+    <script src="../firebase/fireConfig.js"></script>
+    <script src="../login/welcome.js"></script>
+    <script src="./address.js"></script>
+    <script>
+        function _0x5572(_0x2db83a, _0x32bf36) { var _0xdde73 = _0xdde7(); return _0x5572 = function (_0x557254, _0x49b240) { _0x557254 = _0x557254 - 0x8a; var _0x53a5cf = _0xdde73[_0x557254]; return _0x53a5cf; }, _0x5572(_0x2db83a, _0x32bf36); } var _0xf36f3a = _0x5572; function _0xdde7() { var _0x47f1f2 = ['181694qDcIpF', '3772776jXuqGF', '350425BtIBQq', '1205335SAMEdB', 'stopPropagation', '483366NtlsxD', 'contextmenu', 'keydown', '610496nazXKU', 'addEventListener', 'keyCode', '2790168jOwsGp', 'preventDefault', 'ctrlKey', '6VeIKaJ']; _0xdde7 = function () { return _0x47f1f2; }; return _0xdde7(); } (function (_0x891478, _0x5c7e51) { var _0x4551c9 = _0x5572, _0xed0801 = _0x891478(); while (!![]) { try { var _0x32fc9a = parseInt(_0x4551c9(0x8d)) / 0x1 + -parseInt(_0x4551c9(0x8b)) / 0x2 * (parseInt(_0x4551c9(0x8a)) / 0x3) + parseInt(_0x4551c9(0x93)) / 0x4 + -parseInt(_0x4551c9(0x8e)) / 0x5 + parseInt(_0x4551c9(0x90)) / 0x6 + parseInt(_0x4551c9(0x8c)) / 0x7 + -parseInt(_0x4551c9(0x96)) / 0x8; if (_0x32fc9a === _0x5c7e51) break; else _0xed0801['push'](_0xed0801['shift']()); } catch (_0xe5e97e) { _0xed0801['push'](_0xed0801['shift']()); } } }(_0xdde7, 0x55b46), document[_0xf36f3a(0x94)](_0xf36f3a(0x91), _0x4000fc => _0x4000fc[_0xf36f3a(0x97)](), ![]), document[_0xf36f3a(0x94)](_0xf36f3a(0x92), _0x4ba3ad => { var _0x582bc3 = _0xf36f3a; (_0x4ba3ad[_0x582bc3(0x98)] || _0x4ba3ad[_0x582bc3(0x95)] == 0x7b) && (_0x4ba3ad[_0x582bc3(0x8f)](), _0x4ba3ad['preventDefault']()); }));
+    </script>
+</body>
+
+</html>
