@@ -4,10 +4,10 @@ var brandV, codeV, nameV, scontactV, cityV, smanagerV, smanagernameV, asmanagerV
 // const admin = require('firebase-admin');
 // admin.initializeApp();
 
-exports.redirect = functions.https.onRequest((req, res) => {
-  const newUrl = "https://shopinformation.mhamzashabbir.live"; // Replace with your new URL
-  res.redirect(301, newUrl);
-});
+// exports.redirect = functions.https.onRequest((req, res) => {
+//   const newUrl = "https://shopinformation.mhamzashabbir.live"; // Replace with your new URL
+//   res.redirect(301, newUrl);
+// });
 
 
 const domains = ["eastgateretail.com"];
