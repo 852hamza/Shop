@@ -101,7 +101,10 @@ document.getElementById("read").onclick = function () {
         document.getElementById("pos_code").value = snapshot.val().poscode;
         document.getElementById("email").value = snapshot.val().email;
         document.getElementById("shop_address").value = snapshot.val().shopaddress;
-      } else {
+      } else if (brandV && codeV === "") {
+        alert("Brand and store code mandatory")
+      }
+      else {
         alert("Record does not exist in the database");
         document.getElementById("select_brand").value = "";
         document.getElementById("selectstore_code").value = "";
