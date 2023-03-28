@@ -77,7 +77,8 @@ button {
 }
 
 #printitem {
-    background-color: rgb(228, 228, 210);
+    /* background-color: rgb(228, 228, 210); */
+    background-color: rgb(205, 230, 181);
     height:500px;
     width: 900px;
     margin: auto;
@@ -91,6 +92,7 @@ button {
     padding-left: 5px;
     margin: 5px;
     font-size: 14px;
+    font-weight: 800;
 }
 
 .printitemlist {

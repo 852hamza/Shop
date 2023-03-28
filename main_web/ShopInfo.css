@@ -18,7 +18,8 @@ body {
   font-family: Georgia, Arial and Helvetica;
   font-weight: bold;
   font-size: 17px;
-  background-image: url(../pic/shapelined-_JBKdviweXI-unsplash.jpg);
+  /* background-image: url(../pic/shapelined-_JBKdviweXI-unsplash.jpg); */
+  background-color: rgb(185,169,150);
   border-radius: 20px;
 }
 
@@ -38,6 +39,11 @@ h2 {
   text-align: center;
 } */
 
+select{
+  outline: none;
+  font-weight: bold;
+
+}
 input {
   width: 300px;
   /* margin: -10px -4px 1px 3px; */
@@ -48,8 +54,11 @@ input {
   text-align: justify;
   display: inline-block;
   font-size: large;
-  font-weight: 300px;
+  font-weight: bold;
   border-radius: 10px;
+  border-color: wheat;
+  outline: none;
+  background-color: rgb(206,245,167);
 }
 
 button {

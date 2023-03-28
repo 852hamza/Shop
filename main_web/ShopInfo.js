@@ -97,8 +97,7 @@ document.getElementById("read").onclick = function () {
         alert("Brand and store code mandatory")
       }
       else {
-        alert("Record does not exist in the database");
-        document.getElementById("select_brand").value = "";
+        alert("Record does not exist in the database Please enter valid code");
         document.getElementById("selectstore_code").value = "";
         document.getElementById("computer_name").value = "";
         document.getElementById("shop_contact").value = "";
@@ -126,8 +125,8 @@ document.getElementById("read").onclick = function () {
 document.getElementById("insert").onclick = function () {
 
   brandV = document.getElementById("select_brand").value;
-  if (brandV == "") {
-    alert("Brand must selected first!");
+  if (brandV == "brand") {
+    alert("Brand  must be filled out");
     return false;
   }
   codeV = document.getElementById("selectstore_code").value;
@@ -146,44 +145,44 @@ document.getElementById("insert").onclick = function () {
     alert("computer name must be alphabetical letters.");
   }
   scontactV = document.getElementById("shop_contact").value;
-  if (!/^\d+$/.test(scontactV)) {
-    alert("shop contact contain only numbers");
-    return false;
-  }
+  // if (!/^\d+$/.test(scontactV)) {
+  //   alert("shop contact contain only numbers");
+  //   return false;
+  // }
   cityV = document.getElementById("city").value;
   smanagerV = document.getElementById("shop_manager").value;
-  if (!/^\d+$/.test(smanagerV)) {
-    alert("manager contact contain only numbers");
-    return false;
-  }
+  // if (!/^\d+$/.test(smanagerV)) {
+  //   alert("manager contact contain only numbers");
+  //   return false;
+  // }
   smanagernameV = document.getElementById("shop_manager_name").value;
   asmanagerV = document.getElementById("asst_shopmanager").value;
-  if (!/^\d+$/.test(asmanagerV)) {
-    alert("asst shop manager contact contain only numbers");
-    return false;
-  }
+  // if (!/^\d+$/.test(asmanagerV)) {
+  //   alert("asst shop manager contact contain only numbers");
+  //   return false;
+  // }
   asmanagernameV = document.getElementById("asst_shopmanager_name").value;
   amanagerV = document.getElementById("area_manager").value;
-  if (!/^\d+$/.test(amanagerV)) {
-    alert("area manager contact contain only numbers");
-    return false;
-  }
+  // if (!/^\d+$/.test(amanagerV)) {
+  //   alert("area manager contact contain only numbers");
+  //   return false;
+  // }
   amanagernameV = document.getElementById("area_manager_name").value;
   teamviewerV = document.getElementById("team_viewer").value;
-  if (!/^\d+$/.test(teamviewerV)) {
-    alert("teamviewer have only numbers");
-    return false;
-  }
+  // if (!/^\d+$/.test(teamviewerV)) {
+  //   alert("teamviewer have only numbers");
+  //   return false;
+  // }
   anydeskV = document.getElementById("any_desk").value;
-  if (!/^\d+$/.test(anydeskV)) {
-    alert("anydesk have only numbers");
-    return false;
-  }
+  // if (!/^\d+$/.test(anydeskV)) {
+  //   alert("anydesk have only numbers");
+  //   return false;
+  // }/^[a-zA-Z_-]+$/
   posidV = document.getElementById("pos_id").value;
-  if (!/^\d+$/.test(posidV)) {
-    alert("PosId have only numbers");
-    return false;
-  }
+  // if (/^\d+$/.test(posidV)) {
+  //   alert("PosId have only numbers");
+  //   return false;
+  // }
   poscodeV = document.getElementById("pos_code").value;
   emailV = document.getElementById("email").value;
   // Check for valid email address
@@ -193,6 +192,12 @@ document.getElementById("insert").onclick = function () {
     return false;
   }
   saddressV = document.getElementById("shop_address").value;
+  if (saddressV === "") {
+    alert("Shop Address is mandatory");
+    return false;
+  } else {
+
+  }
   // console.log(brandV, codeV, nameV, scontactV, smanagerV, smanagernameV, asmanagerV, asmanagernameV, amanagerV, amanagernameV, emailV, saddressV,teamviewerV
   // );
 
@@ -219,8 +224,6 @@ document.getElementById("insert").onclick = function () {
       shopaddress: saddressV,
     });
   alert("Data Inserted Successfully into Database");
-
-  document.getElementById("select_brand").value = "";
   document.getElementById("selectstore_code").value = "";
   document.getElementById("computer_name").value = "";
   document.getElementById("shop_contact").value = "";
@@ -263,10 +266,9 @@ document.getElementById("update").onclick = function () {
       });
     alert("Data Update Successfully into Database");
   } else {
-    alert("Update Error");
+    alert("Update Error  ! Brand and Store code required for Update data ");
   }
 
-  document.getElementById("select_brand").value = "";
   document.getElementById("selectstore_code").value = "";
   document.getElementById("computer_name").value = "";
   document.getElementById("shop_contact").value = "";
@@ -297,7 +299,7 @@ document.getElementById("delete").onclick = function () {
     alert("Brand and Store code required for Delete data !");
   }
 
-  document.getElementById("select_brand").value = "";
+
   document.getElementById("selectstore_code").value = "";
   document.getElementById("computer_name").value = "";
   document.getElementById("shop_contact").value = "";
