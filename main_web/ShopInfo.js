@@ -1,4 +1,4 @@
-var brandV, codeV, nameV, scontactV, cityV, smanagerV, smanagernameV, asmanagerV, asmanagernameV, amanagerV, amanagernameV, teamviewerV, anydeskV, posidV, poscodeV, emailV, saddressV;
+var brandV, codeV, nameV, scontactV, cityV, smanagerV, smanagernameV, asmanagerV,passwordV, asmanagernameV, amanagerV, amanagernameV, teamviewerV, anydeskV, posidV, poscodeV, emailV, saddressV;
 
 
 
@@ -63,6 +63,7 @@ function readFom() {
   posidV = document.getElementById("pos_id").value;
   poscodeV = document.getElementById("pos_code").value;
   emailV = document.getElementById("email").value;
+  passwordV = document.getElementById("password").value;
   saddressV = document.getElementById("shop_address").value;
   // console.log(brandV, codeV, nameV, scontactV, smanagerV, smanagernameV, asmanagerV, asmanagernameV, amanagerV, amanagernameV, emailV, saddressV,teamviewerV
   // );
@@ -92,6 +93,7 @@ document.getElementById("read").onclick = function () {
         document.getElementById("pos_id").value = snapshot.val().posid;
         document.getElementById("pos_code").value = snapshot.val().poscode;
         document.getElementById("email").value = snapshot.val().email;
+        document.getElementById("password").value = snapshot.val().password;
         document.getElementById("shop_address").value = snapshot.val().shopaddress;
       } else if (brandV && codeV === "") {
         alert("Brand and store code mandatory")
@@ -113,6 +115,7 @@ document.getElementById("read").onclick = function () {
         document.getElementById("pos_id").value = "";
         document.getElementById("pos_code").value = "";
         document.getElementById("email").value = "";
+        document.getElementById("password").value = "";
         document.getElementById("shop_address").value = "";
       }
 
@@ -191,6 +194,7 @@ document.getElementById("insert").onclick = function () {
     alert("Invalid email address");
     return false;
   }
+  passwordV = document.getElementById("password").value;
   saddressV = document.getElementById("shop_address").value;
   if (saddressV === "") {
     alert("Shop Address is mandatory");
@@ -198,8 +202,6 @@ document.getElementById("insert").onclick = function () {
   } else {
 
   }
-  // console.log(brandV, codeV, nameV, scontactV, smanagerV, smanagernameV, asmanagerV, asmanagernameV, amanagerV, amanagernameV, emailV, saddressV,teamviewerV
-  // );
 
   firebase
     .database()
@@ -221,6 +223,7 @@ document.getElementById("insert").onclick = function () {
       posid: posidV,
       poscode: poscodeV,
       email: emailV,
+      password: passwordV,
       shopaddress: saddressV,
     });
   alert("Data Inserted Successfully into Database");
@@ -239,6 +242,7 @@ document.getElementById("insert").onclick = function () {
   document.getElementById("pos_id").value = "";
   document.getElementById("pos_code").value = "";
   document.getElementById("email").value = "";
+  document.getElementById("password").value = "";
   document.getElementById("shop_address").value = "";
 };
 document.getElementById("update").onclick = function () {
@@ -262,6 +266,7 @@ document.getElementById("update").onclick = function () {
         posid: posidV,
         poscode: poscodeV,
         email: emailV,
+        password: passwordV,
         shopaddress: saddressV,
       });
     alert("Data Update Successfully into Database");
@@ -284,6 +289,7 @@ document.getElementById("update").onclick = function () {
   document.getElementById("pos_id").value = "";
   document.getElementById("pos_code").value = "";
   document.getElementById("email").value = "";
+  document.getElementById("password").value= "";
   document.getElementById("shop_address").value = "";
 };
 document.getElementById("delete").onclick = function () {
@@ -315,5 +321,6 @@ document.getElementById("delete").onclick = function () {
   document.getElementById("pos_id").value = "";
   document.getElementById("pos_code").value = "";
   document.getElementById("email").value = "";
+  document.getElementById("password").value = "";
   document.getElementById("shop_address").value = "";
 };
