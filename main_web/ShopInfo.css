@@ -1,11 +1,12 @@
 body {
+  margin: 0;
+  padding: 0;
   background-image: url("../pic/zoe-cOBuc8-d2hg-unsplash.jpg");
-  background-repeat: no-repeat;
-  background-attachment: auto;
-  background-size: 100% 100%;
  /* Hide scrollbars */
   /* overflow: hidden; */
- 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 
 }
 
