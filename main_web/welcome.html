@@ -10,86 +10,92 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
 </head>
 
-<body >
-  <form action="" class="container" id="shopinfo">
-    <h2>Sefam Shops Information</h2>
-    <hr />
-    <br />
-    <form class="form" id="my_input">
-      <label for="select_brand">Select Brand </label> <select name="selectbrand" id="select_brand"
-        style="width: 310px; text-align: center; font-size: 18px; font-weight: bold; border-radius: 10px;">
-        <option value="brand">Select any Brand</option>
-        <option value="Bareeze">Bareeze (002)</option>
-        <option value="Home Expression">Home Expression (002)</option>
-        <option value="Fabric Store">Fabric Store (082)</option>
-        <option value="Bareeze Men">Bareeze Man (003)</option>
-        <option value="Chinyere">Chinyere (005)</option>
-        <option value="Minnie Minor">Minnie Minor (007)</option>
-        <option value="Rang Ja">Rang ja (008)</option>
-        <option value="The Entertainer">The Entertainer (012)</option>
-        <option value="Armani">Armani (014)</option>
-        <option value="Polo">Polo (013)</option>
-      </select><a href="../address/address.html" style="float: right;">Shop Address</a><br /><br />
-      <label>Select Store Code</label> <input type="text" name="selectstorecode" id="selectstore_code"
-        placeholder="store code" autocomplete="off"/>
-      <br /><br />
-      <label>Computer Name</label> <input type="text" name="computername" id="computer_name"
-        placeholder="Shop Computer Name" style="text-transform:uppercase" autocomplete="off" /> <label
-        style="width: 70px; padding-left: 150px;  display: inline-block;">City</label>
-      <br /><br />
-      <label>Shop Contact</label> <input type="text" name="shopcontact" id="shop_contact"
-        placeholder="Shop contact number" autocomplete="off"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input
-        type="text" name="city " id="city" placeholder="City Here" style="text-transform: uppercase; width: 255px;" autocomplete="off">
-      <br /><br />
-      <label>Shop Manager </label> <input type="text" name="shopmanager" id="shop_manager"
-        placeholder="Shop manager number" autocomplete="off"/>&nbsp;
+<body>
+  <div>
+    <form action="" class="container" id="shopinfo">
+      <h2>Sefam Shops Information</h2>
+      <hr />
+      <br />
+      <form class="form" id="my_input">
+        <label for="select_brand">Select Brand </label> <select name="selectbrand" id="select_brand"
+          style="width: 310px; text-align: center; font-size: 18px; font-weight: bold; border-radius: 10px;">
+          <option value="brand">Select any Brand</option>
+          <option value="Bareeze">Bareeze (002)</option>
+          <option value="Home Expression">Home Expression (002)</option>
+          <option value="Fabric Store">Fabric Store (082)</option>
+          <option value="Bareeze Men">Bareeze Man (003)</option>
+          <option value="Chinyere">Chinyere (005)</option>
+          <option value="Minnie Minor">Minnie Minor (007)</option>
+          <option value="Rang Ja">Rang ja (008)</option>
+          <option value="The Entertainer">The Entertainer (012)</option>
+          <option value="Armani">Armani (014)</option>
+          <option value="Polo">Polo (013)</option>
+        </select><a href="../address/address.html" style="float: right;">Shop Address</a><br /><br />
+        <label>Select Store Code</label> <input type="text" name="selectstorecode" id="selectstore_code"
+          placeholder="store code" autocomplete="off" />
+        <br /><br />
+        <label>Computer Name</label> <input type="text" name="computername" id="computer_name"
+          placeholder="Shop Computer Name" style="text-transform:uppercase" autocomplete="off" /> <label
+          style="width: 70px; padding-left: 150px;  display: inline-block;">City</label>
+        <br /><br />
+        <label>Shop Contact</label> <input type="text" name="shopcontact" id="shop_contact"
+          placeholder="Shop contact number"
+          autocomplete="off" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input
+          type="text" name="city " id="city" placeholder="City Here" style="text-transform: uppercase; width: 255px;"
+          autocomplete="off">
+        <br /><br />
+        <label>Shop Manager </label> <input type="text" name="shopmanager" id="shop_manager"
+          placeholder="Shop manager number" autocomplete="off" />&nbsp;
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input
-        style="width: 255px;" type="text" name="shopmanagername" id="shop_manager_name" placeholder="Shop manager "
-        autocomplete="off" />
-      <br /><br />
-      <label>Asst.Shop Manager</label> <input type="text" name="asstshopmanager" id="asst_shopmanager"
-        placeholder="Asst.Shop manager No" autocomplete="off"/> &nbsp;
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input style="width: 255px;"
-        type="text" name="asstshopmanagername" id="asst_shopmanager_name" placeholder="Asst.Shop manager name"
-        autocomplete="off" />
-      <br /><br />
-      <label>Area Manager</label> <input type="text" name="areamanager" id="area_manager"
-        placeholder="Area manager number" autocomplete="off"/> &nbsp;
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input
-        style="width: 255px;" type="text" name="areamanagername" id="area_manager_name" placeholder="Area manager name"
-        autocomplete="off" />
-      <br /><br />
-      <label>Team Viewer</label> <input type="text" name="teamviewer" id="team_viewer"
-        placeholder="Team viewer Id " autocomplete="off"/>&nbsp;&nbsp;
-      <br /><br />
-      <label>AnyDesk</label> <input type="text" name="anydesk" id="any_desk" placeholder="Anydesk Id "autocomplete="off" />
-      <label style="width: 90px;">POS Id</label><input type="text" name="posid" id="pos_id" placeholder="PosId Here"
-        style="text-transform: uppercase; width: 255px;" autocomplete="off">
-      <br /><br />
-      <label>Email</label> <input type="email" name="email" id="email" placeholder="Enter email here example@gmail.com"
-        autocomplete="off" /> <label style="width: 87px;">POS Code</label> <input type="text" name="poscode"
-        id="pos_code" placeholder="PosCode here" style="text-transform: uppercase; width: 255px;" autocomplete="off">
-      <br /><br />
-      <label>Shop Address</label> <input type="text" name="shopaddress" id="shop_address"
-        placeholder="Shop Address here" style="width: 665px;" autocomplete="off" />
-      <br /><br />
+          style="width: 255px;" type="text" name="shopmanagername" id="shop_manager_name" placeholder="Shop manager "
+          autocomplete="off" />
+        <br /><br />
+        <label>Asst.Shop Manager</label> <input type="text" name="asstshopmanager" id="asst_shopmanager"
+          placeholder="Asst.Shop manager No" autocomplete="off" /> &nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input style="width: 255px;" type="text" name="asstshopmanagername" id="asst_shopmanager_name"
+          placeholder="Asst.Shop manager name" autocomplete="off" />
+        <br /><br />
+        <label>Area Manager</label> <input type="text" name="areamanager" id="area_manager"
+          placeholder="Area manager number" autocomplete="off" /> &nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input
+          style="width: 255px;" type="text" name="areamanagername" id="area_manager_name"
+          placeholder="Area manager name" autocomplete="off" />
+        <br /><br />
+        <label>Team Viewer</label> <input type="text" name="teamviewer" id="team_viewer" placeholder="Team viewer Id "
+          autocomplete="off" />&nbsp;&nbsp;
+        <br /><br />
+        <label>AnyDesk</label> <input type="text" name="anydesk" id="any_desk" placeholder="Anydesk Id "
+          autocomplete="off" />
+        <label style="width: 90px;">POS Id</label><input type="text" name="posid" id="pos_id" placeholder="PosId Here"
+          style="text-transform: uppercase; width: 255px;" autocomplete="off">
+        <br /><br />
+        <label>Email</label> <input type="email" name="email" id="email"
+          placeholder="Enter email here example@gmail.com" autocomplete="off" /> <label style="width: 87px;">POS
+          Code</label> <input type="text" name="poscode" id="pos_code" placeholder="PosCode here"
+          style="text-transform: uppercase; width: 255px;" autocomplete="off">
+        <br /><br />
+        <label>Shop Address</label> <input type="text" name="shopaddress" id="shop_address"
+          placeholder="Shop Address here" style="width: 665px;" autocomplete="off" />
+        <br /><br />
 
+      </form>
+
+      <center>
+
+        <div class="buttons">
+          <button hidden="hidden" id="read"></button>
+          <button class="btn_1" id="insert">Add/New</button>
+          <button class="btn_1" id="update">Edit/Update</button>
+          <button class="btn_2" id="delete">Delete</button>
+          <button class="btn btn-danger" style="width: auto;" type="button" onClick="window.location.reload()">
+            Reload Page
+          </button>
+          <button class="btn btn-danger" onclick="logout()">Logout</button>
+        </div>
+      </center>
     </form>
-
-    <center>
-
-      <div class="buttons">
-        <button hidden="hidden" id="read"></button>
-        <button class="btn_1" id="insert">Add/New</button>
-        <button class="btn_1" id="update">Edit/Update</button>
-        <button class="btn_2" id="delete">Delete</button>
-        <button class="btn btn-danger" style="width: auto;" type="button" onClick="window.location.reload()">
-          Reload Page
-        </button>
-        <button class="btn btn-danger" onclick="logout()">Logout</button>
-      </div>
-    </center>
-  </form>
+  </div>
 
   <script>
     var input = document.getElementById("shopinfo");
