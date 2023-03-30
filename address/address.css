@@ -73,6 +73,10 @@ button {
     #printitem,
     #printitem * {
         display: block;
+
+    }
+    #printitem input{
+        margin-left: 100px;
     }
 }
 
@@ -91,8 +95,8 @@ button {
     padding: 2px;
     padding-left: 5px;
     margin: 5px;
-    font-size: 14px;
-    font-weight: 800;
+    font-size: 20px;
+    font-weight: 1550;
 }
 
 .printitemlist {
@@ -101,5 +105,6 @@ button {
     padding: 2px;
     padding-left: 5px;
     margin: 5px;
-    font-size: 14px;
+    font-size: 20px;
+    font-weight: 1550;
 }
