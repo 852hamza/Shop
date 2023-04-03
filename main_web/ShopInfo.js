@@ -6,13 +6,12 @@ function autofillEmptyInputswithzero() {
 inputElements =
 document.querySelectorAll('my_input');
 
-// loop through all the input elements inputElements. forEach(input => { // check if the input value is empty if (input.value === "" || input.value === undefined) {
-
-// if the input value is empty, set it to o
+ inputElements. forEach(input => { 
+ if (input.value === "" || input.value === undefined) {
 
 input.value = '0';
 }
-});
+)};
 }
 
 const domains = ["eastgateretail.com"];
