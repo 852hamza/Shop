@@ -1,6 +1,19 @@
 var brandV, codeV, nameV, scontactV, cityV, smanagerV, smanagernameV, asmanagerV,passwordV, asmanagernameV, amanagerV, amanagernameV, teamviewerV, anydeskV, posidV, poscodeV, emailV, saddressV;
 
+function autofillEmptyInputswithzero() {
+ // get all input elements on the page const 
 
+inputElements =
+document.querySelectorAll('my_input');
+
+// loop through all the input elements inputElements. forEach(input => { // check if the input value is empty if (input.value === "") {
+
+// if the input value is empty, set it to o
+
+input.value = '0';
+}
+});
+}
 
 const domains = ["eastgateretail.com"];
 
