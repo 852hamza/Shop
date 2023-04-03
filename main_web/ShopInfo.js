@@ -1,19 +1,5 @@
 var brandV, codeV, nameV, scontactV, cityV, smanagerV, smanagernameV, asmanagerV,passwordV, asmanagernameV, amanagerV, amanagernameV, teamviewerV, anydeskV, posidV, poscodeV, emailV, saddressV;
-
-function autofillEmptyInputswithzero() {
- // get all input elements on the page const 
-
-inputElements =
-document.querySelectorAll('my_input');
-
- inputElements. forEach(input => { 
- if (input.value === "" || input.value === undefined) {
-
-input.value = '0';
-}
-)};
-
-};
+
 const domains = ["eastgateretail.com"];
 
 const emailInput = document.getElementById("email");
