@@ -12,8 +12,8 @@ document.querySelectorAll('my_input');
 input.value = '0';
 }
 )};
-}
 
+};
 const domains = ["eastgateretail.com"];
 
 const emailInput = document.getElementById("email");
