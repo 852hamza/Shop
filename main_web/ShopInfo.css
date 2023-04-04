@@ -125,4 +125,8 @@ button {
   .shopaddress{
   width: 100px;
 }
+    #read {
+    display: inline-block;
+   
+  }
 }
