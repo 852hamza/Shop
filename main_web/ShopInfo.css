@@ -6,7 +6,7 @@ body {
   /* overflow: hidden; */
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: auto;
 
 }
 
@@ -103,5 +103,8 @@ button {
     width: 90%;
     float: none;
     margin: 10px auto;
+  }
+   .input{
+    width: 100px;
   }
 }
