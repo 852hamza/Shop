@@ -6,7 +6,7 @@ body {
   /* overflow: hidden; */
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: auto;
+  background-attachment: fixed;
 
 }
 
@@ -105,7 +105,16 @@ button {
 
 @media only screen and (max-width: 300px) {
   .container {
-    width: 110%;
+    width: 100%;
+ margin: 0;
+  padding: 0;
+  background-image: url("../pic/zoe-cOBuc8-d2hg-unsplash.jpg");
+  /* Hide scrollbars */
+  /* overflow: hidden; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
   }
 
   .input {
