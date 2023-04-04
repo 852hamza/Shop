@@ -32,6 +32,9 @@ label {
   display: inline-block;
 
 }
+.shopaddress{
+  width: 665px;
+}
 
 h2 {
   font-size: 18px;
@@ -119,4 +122,7 @@ button {
     width: 50px;
   display: inline-block;
   }
+  .shopaddress{
+  width: 100px;
+}
 }
