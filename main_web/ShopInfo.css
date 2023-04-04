@@ -95,3 +95,13 @@ button {
   background-color: rgb(229, 41, 12);
 
 }
+@media only screen and (max-width: 767px) {
+  .body {
+    width: 100%;
+  }
+  .container {
+    width: 90%;
+    float: none;
+    margin: 10px auto;
+  }
+}
