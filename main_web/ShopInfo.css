@@ -2,11 +2,11 @@ body {
   margin: 0;
   padding: 0;
   background-image: url("../pic/zoe-cOBuc8-d2hg-unsplash.jpg");
- /* Hide scrollbars */
+  /* Hide scrollbars */
   /* overflow: hidden; */
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: auto;
 
 }
 
@@ -15,6 +15,7 @@ form i {
   margin-left: -30px;
   cursor: pointer;
 }
+
 .container {
   width: 900px;
   margin: 10px auto;
@@ -23,7 +24,7 @@ form i {
   font-weight: bold;
   font-size: 17px;
   /* background-image: url(../pic/shapelined-_JBKdviweXI-unsplash.jpg); */
-  background-color: rgb(185,169,150);
+  background-color: rgb(185, 169, 150);
   border-radius: 20px;
 }
 
@@ -31,9 +32,6 @@ label {
   width: 170px;
   display: inline-block;
 
-}
-.shopaddress{
-  width: 665px;
 }
 
 h2 {
@@ -46,11 +44,12 @@ h2 {
   text-align: center;
 } */
 
-select{
+select {
   outline: none;
   font-weight: bold;
 
 }
+
 input {
   width: 300px;
   /* margin: -10px -4px 1px 3px; */
@@ -65,7 +64,7 @@ input {
   border-radius: 10px;
   border-color: wheat;
   outline: none;
-  background-color: rgb(206,245,167);
+  background-color: rgb(206, 245, 167);
 }
 
 button {
@@ -80,6 +79,11 @@ button {
   border-radius: 10px;
   font-weight: bold;
 }
+
+.shopaddress {
+  width: 665px;
+}
+
 
 .btn_1:active {
 
@@ -98,34 +102,27 @@ button {
   background-color: rgb(229, 41, 12);
 
 }
-@media only screen and (max-width: 6000px) {
-  .body {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    background-image: url("../pic/zoe-cOBuc8-d2hg-unsplash.jpg");
-   /* Hide scrollbars */
-    /* overflow: hidden; */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-  }
+
+@media only screen and (max-width: 360px) {
   .container {
-    width: 100%;
-    float: none;
-    margin: 10px auto;
+    width: 110%;
   }
-  .input{
-    width: 200px;
+
+  .input {
+    width: 100px;
+    margin-bottom: 40px;
   }
-  .label{
-    width: 50px;
-  display: inline-block;
+
+  .label {
+    width: 40px;
   }
-  .shopaddress{
-  width: 100px;
-}
-    #read {
+
+  .shopaddress {
+    width: 100px;
+  }
+
+
+  #read {
     display: inline-block;
    
   }
