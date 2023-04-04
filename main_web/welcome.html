@@ -77,8 +77,8 @@
           placeholder="Enter email here example@gmail.com" autocomplete="off" />&nbsp;<label style="width: 90px;">Password</label><input type="password" name="password" id="password" placeholder="Password Here"
           style="text-transform: uppercase; width: 255px;" autocomplete="off"><i class="bi bi-eye-slash" id="togglePassword"></i>
         <br /><br />
-        <label>Shop Address</label> <input type="text" name="shopaddress" id="shop_address"
-          placeholder="Shop Address here" autocomplete="off" />
+        <label>Shop Address</label> <input class="shopaddress" type="text" name="shopaddress" id="shop_address"
+          placeholder="Shop Address here"  autocomplete="off" />
         <br /><br />
 
       </form>
@@ -86,7 +86,7 @@
       <center>
 
         <div class="buttons">
-          <button hidden="hidden" id="read">Read</button>
+          <button  hidden="hidden" id="read">Read</button>
           <button class="btn_1" id="insert">Add/New</button>
           <button class="btn_1" id="update">Edit/Update</button>
           <button class="btn_2" id="delete">Delete</button>
@@ -102,10 +102,13 @@
   <script>
     var input = document.getElementById("shopinfo");
     input.addEventListener("keypress", function (event) {
-      if (event.keyCode === 13) {
+      if (event.key === "Enter") {
         event.preventDefault();
         document.getElementById("read").click();
       }
+      if (event.keyCode === 13) {
+    document.getElementById("myButton").click();
+  }
     });
   </script>
     <script>
