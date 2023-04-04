@@ -6,7 +6,7 @@ body {
   /* overflow: hidden; */
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: auto;
+  background-attachment: fixed;
 
 }
 
@@ -95,16 +95,28 @@ button {
   background-color: rgb(229, 41, 12);
 
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 360px) {
   .body {
     width: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url("../pic/zoe-cOBuc8-d2hg-unsplash.jpg");
+   /* Hide scrollbars */
+    /* overflow: hidden; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
   }
   .container {
-    width: 90%;
+    width: 100%;
     float: none;
     margin: 10px auto;
   }
-   .input{
-    width: 100px;
+  .input{
+    width: 200px;
+  }
+  .label{
+    width: 50px;
+  display: inline-block;
   }
 }
