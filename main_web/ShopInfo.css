@@ -26,13 +26,7 @@ form i {
   /* background-image: url(../pic/shapelined-_JBKdviweXI-unsplash.jpg); */
   background-color: rgb(185, 169, 150);
   border-radius: 20px;
-  
-  background-image: url(../pic/sefam-logo.png);
-  background-repeat: no-repeat;
-  background-attachment: auto;
-  background-size: 100% 100%;
- /* Hide scrollbars */
-  overflow: hidden;
+
 }
 
 label {
