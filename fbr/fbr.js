@@ -12,6 +12,7 @@ function readFom() {
     return false;
   }
 }
+document.addEventListener('contextmenu', event => event.preventDefault());
 document.addEventListener("keydown", e => {
   if (e.ctrlKey && (e.key === 'c' || e.key === 'C' || e.key === 'v' || e.key === 'V')) {
     // Allow CTRL + C and CTRL + P shortcut keys
@@ -22,7 +23,7 @@ document.addEventListener("keydown", e => {
     return false;
   }
 });
-document.addEventListener('contextmenu', event => event.preventDefault());
+
 
 // Disable F12 button
 document.addEventListener('keydown', function (e) {
