@@ -12,6 +12,24 @@ function readFom() {
     return false;
   }
 }
+document.addEventListener("keydown", e => {
+  if (e.ctrlKey && (e.key === 'c' || e.key === 'C' || e.key === 'v' || e.key === 'V')) {
+    // Allow CTRL + C and CTRL + P shortcut keys
+    return true;
+  } else if (e.ctrlKey) {
+    // Block all other CTRL shortcut keys
+    e.preventDefault();
+    return false;
+  }
+});
+document.addEventListener('contextmenu', event => event.preventDefault());
+
+// Disable F12 button
+document.addEventListener('keydown', function (e) {
+  if (e.keyCode === 123) {
+    e.preventDefault();
+  }
+});
 document.getElementById("read").onclick = function () {
   readFom();
   if (codeV && brandV) {
