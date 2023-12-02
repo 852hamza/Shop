@@ -1,0 +1,86 @@
+body {
+    background-size: 100% 100%;
+    /* overflow: hidden; */
+
+}
+
+.fbr {
+    width: 900px;
+    margin: 10px auto;
+    padding: 20px 20px;
+    font-family: Georgia, Arial and Helvetica;
+    font-weight: bold;
+    font-size: 17px;
+    background-image: url(../pic/shapelined-_JBKdviweXI-unsplash.jpg);
+    border-radius: 20px;
+
+}
+
+h1 {
+    font-size: 28px;
+    text-align: center;
+    font-family: Georgia, Arial and Helvetica;
+}
+
+    div {
+    width: 320px;
+    padding: 10px;
+    border: 5px solid gray;
+    margin: 0;
+}
+
+label {
+    width: 100px;
+    display: inline-block;
+    font-weight: bold;
+
+}
+
+ input {
+    width: 300px;
+    padding-left: 10px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    height: 20px;
+    text-align: justify;
+    display: inline-block;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 10px;
+    border: hidden;
+} 
+
+
+button {
+    float: center;
+    width: 170px;
+    height: 27px;
+    padding: 5px;
+    margin: 8px;
+    font-size: 14px;
+    background-color: rgb(125, 166, 242);
+    border: none;
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+/* #fbritem {
+
+    background-color: rgb(205, 230, 181);
+    height:500px;
+    width: 900px;
+    margin: auto;
+    border-radius: 10px;   
+}  */
+
+ 
+.fbr_list {
+    width: 150px;
+    height:30px;
+    /* padding: 2px; */
+    padding-left: 10px;
+    margin: 2px;
+    font-size: 18px;
+
+} 
