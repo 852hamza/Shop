@@ -30,6 +30,7 @@ document.addEventListener('keydown', function (e) {
     e.preventDefault();
   }
 });
+
 document.getElementById("read").onclick = function () {
   readFom();
   if (codeV && brandV) {
